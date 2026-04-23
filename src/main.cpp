@@ -1,6 +1,6 @@
 #include<iostream>
 
-int main(argc, argv){
+int main(int argc, char const *argv[]){
 
-    retun EXIT_SUCCES;
+    return 0;
 }
