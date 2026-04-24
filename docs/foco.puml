@@ -9,10 +9,18 @@ class Foco{
     + EstadoFoco LeerEstado()
 }
 class EstadoFoco
+class SerieFocos{
+    - Focos focos[10]
+    + MostrarFocos()
+    + EncenderFocos()
+    + ApagarFocos()
+}
 
 
 Usuario o-- Foco
 Foco *-- EstadoFoco
 EstadoFoco --|> Booleano
+SerieFocos "1" *-- "10" Foco
+Usuario o-- SerieFocos
 
 @enduml
