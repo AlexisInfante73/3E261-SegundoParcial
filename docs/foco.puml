@@ -1,13 +1,18 @@
 @startuml foco
 
 class Usuario
+
 class Foco{
+    - EstadoFoco estado
     + Encender()
     + Apagar()
+    + EstadoFoco LeerEstado()
 }
 class EstadoFoco
 
+
 Usuario o-- Foco
 Foco *-- EstadoFoco
+EstadoFoco --|> Booleano
 
 @enduml
