@@ -28,5 +28,11 @@ int main(){
     cout<<&direccion<<endl; //Direccion de memoria del puntero direccion, que es una variable local dentro de la funcion main, por lo tanto su direccion de memoria es diferente a la de a
     cout<<*direccion<<endl; //Valor al que apunta el puntero direccion, que es una direccion de memoria no inicializada, por lo tanto puede contener cualquier valor basura o provocar un error de acceso a memoria
     
+    int* dir = (int*)malloc(sizeof(int));
+    *dir=7;
+    cout<<*dir<<endl;
+
+    int* dir2 = new int;
+
     return 0; //El programa devuelve 0 para indicar que se ha ejecutado correctamente
 }
